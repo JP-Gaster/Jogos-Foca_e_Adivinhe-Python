@@ -2,14 +2,17 @@ print('*************************************')
 print('* Bem Vindo, ao JODO DE ADIVINHAÇÃO *')
 print('*************************************')
 
-numeroSecreto = 6
+numero_secreto = 6
 
-chute = input('Digite seu número')
+chute_string = input('Digite seu número')
 
-print('**** Você  digitou o número *', chute )
+print('**** Você  digitou o número *', chute_string)
 
-if numeroSecreto == chute:
+chute = int(chute_string)
+
+if numero_secreto == chute_string:
     print('Você acertou!')
-
+elif(chute>numero_secreto):
+    print('Você errou! O número secreto é um número menor')
 else:
-    print('Você errou!')
+    print('Você errou! O número secreto é um número maior')
