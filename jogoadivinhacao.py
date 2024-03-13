@@ -9,7 +9,7 @@ numero_secreto = 6
 numero_tentativas = 3
 
 while(numero_tentativas > 0):
-    numero_tentativas = numero_tentativas -1
+    print('Tentativa, ' numero_tentativas)
 
 #Recebendo o chute do jogador
     chute_string = input('Digite seu número: ')
