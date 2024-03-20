@@ -1,9 +1,10 @@
 print('*************************************')
-print('* Bem Vindo, ao JODO DE ADIVINHAÇÃO *')
+print('* Bem Vindo, ao JOGO DE ADIVINHAÇÃO *')
 print('*************************************')
 
 #Definindo o número secreto
-numero_secreto = 6
+import random
+numero_secreto = int(random.random()*100)
 rodada = 1
 #Definindo o número de tentativas
 numero_tentativas = 3
