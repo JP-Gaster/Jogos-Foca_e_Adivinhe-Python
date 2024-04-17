@@ -6,8 +6,14 @@ print('*************************************')
 
 #Definindo o número secreto
 
-numero_secreto = round(random.random()*100)
+numero_secreto = random.randrange(1,101)
 rodada = 1
+
+print('Qual o nível de dificuldade?')
+print('(1)-Fácil, (2)-Médio, (3)-Difícil')
+
+nivel = int(input('Defina o nível: '))
+
 #Definindo o número de tentativas
 numero_tentativas = 8
 
