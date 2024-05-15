@@ -8,6 +8,7 @@ print('*************************************')
 
 numero_secreto = random.randrange(1,101)
 rodada = 1
+pontuação = 1000
 
 print('Qual o nível de dificuldade?')
 print('(1)-Fácil, (2)-Médio, (3)-Difícil, (4)-Hardcore, (5)-Nightmare, (6)-Perfection')
@@ -43,4 +44,6 @@ while(rodada <= numero_tentativas):
         print('Você errou! O número secreto é um número maior')
     else:
         print('Você errou! O número secreto é um número menor')
+    pontos_perdidos = abs(numero_secreto - chute);
+    pontuação = pontuação - pontos_perdidos
     rodada = rodada +1
