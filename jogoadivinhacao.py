@@ -29,16 +29,12 @@ elif(nivel == 5):
 else:
     numero_tentativas = 1
 
-while(rodada <= numero_tentativas):
-    print('Tentativa ', rodada,'de ', numero_tentativas, 'tentativas restantes')
-
-#Recebendo o chute do jogador
-    chute_string = input('Digite um número entre 1 e 100: ')
+while(rodada <= numero_tentativas):(chute > numero_secreto)
     chute = int(chute_string)
 
 #Declarando as condições
     if (numero_secreto == chute):
-        print('ヅ Você ACERTOU!!! ヅ')
+        print('ヅ Você ACERTOU!!! ヅ E fez {} pontos'.format(pontuação))
         break
     elif(chute < numero_secreto):
         print('Você errou! O número secreto é um número maior')
