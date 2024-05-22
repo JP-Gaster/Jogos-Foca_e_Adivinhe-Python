@@ -4,8 +4,6 @@ print('*************************************')
 print('* Bem Vindo, ao JOGO DE ADIVINHAÇÃO *')
 print('*************************************')
 
-#Definindo o número secreto
-
 numero_secreto = random.randrange(1,101)
 rodada = 1
 pontuação = 1000
@@ -32,9 +30,8 @@ else:
 while(rodada <= numero_tentativas):(chute > numero_secreto)
     chute = int(chute_string)
 
-#Declarando as condições
     if (numero_secreto == chute):
-        print('ヅ Você ACERTOU!!! ヅ E fez {} pontos'.format(pontuação))
+        print(' Você ACERTOU! E fez {} pontos'.format(pontuação))
         break
     elif(chute < numero_secreto):
         print('Você errou! O número secreto é um número maior')
@@ -42,4 +39,4 @@ while(rodada <= numero_tentativas):(chute > numero_secreto)
         print('Você errou! O número secreto é um número menor')
     pontos_perdidos = abs(numero_secreto - chute);
     pontuação = pontuação - pontos_perdidos
-    rodada = rodada +1
+    rodada = rodada + 1
