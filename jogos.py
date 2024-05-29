@@ -15,4 +15,4 @@ if(jogo == 1):
     forca.jogar_forca()
 else:
     print('Jogando jogo da Adivinhação')
-    jogoadivinhacao.jogar_adivinhhacao()
+    jogoadivinhacao.jogar_adivinhacao()

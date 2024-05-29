@@ -1,4 +1,4 @@
-def jogar_adivinhhacao():
+def jogar_adivinhacao():
 
     import random
 
@@ -44,3 +44,6 @@ def jogar_adivinhhacao():
         pontos_perdidos = abs(numero_secreto - chute)
         pontuação = pontuação - pontos_perdidos
         rodada = rodada + 1
+        
+if(__name__ == "__main__"):
+    jogar_adivinhacao()
